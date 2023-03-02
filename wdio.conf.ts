@@ -14,6 +14,10 @@ export const config: WebdriverIO.Config = {
     // WebdriverIO allows it to run your tests in arbitrary locations (e.g. locally or
     // on a remote machine).
     runner: 'local',
+    hostname: '127.0.0.1',
+    port: 4444,
+    path: '/wd/hub',
+
     //
     // ==================
     // Specify Test Files
@@ -59,7 +63,7 @@ export const config: WebdriverIO.Config = {
         // 5 instances get started at a time.
         maxInstances: 5,
         //
-        browserName: 'chrome',
+        browserName: 'firefox',
         // If outputDir is provided WebdriverIO can capture driver session logs
         // it is possible to configure which logTypes to include/exclude.
         // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs

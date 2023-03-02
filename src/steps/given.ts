@@ -26,6 +26,14 @@ Given(
     openWebsite
 );
 
+Given('I test firefox', async () => {
+    await browser.url('https://taskmob.demo.vaadin.com');
+    await $('>>>#newTaskButton').waitForDisplayed();
+    console.log(await $('>>>#newTaskButton').isDisplayed()); // return true
+    console.log(await $('>>>#newTaskButton').getText()); // return '' but expected "New task"
+    await expect($('>>>#newTaskButton')).toHaveTextContaining('New task');
+});
+
 Given(
     /^the element "([^"]*)?" is( not)* displayed$/,
     isDisplayed
