@@ -31,6 +31,16 @@ Given(
     isDisplayed
 );
 
+Given('I try to access to shadow root', async () => {
+  await browser.url('https://taskmob.demo.vaadin.com');
+  await $('>>>#newTaskButton').waitForDisplayed();
+  console.log(await $('>>>#newTaskButton button').isExisting()); // return true
+  const element =  $('tasks-view').shadow$('#newTaskButton').shadow$('button');
+  console.log(await element.isExisting()); // return false
+  await expect(element).toBeExisting();
+
+});
+
 Given(
     /^the element "([^"]*)?" is( not)* enabled$/,
     isEnabled

@@ -37,15 +37,15 @@
     "@types/jest": "^29.4.0",
     "@typescript-eslint/eslint-plugin": "^5.52.0",
     "@typescript-eslint/parser": "^5.52.0",
-    "@wdio/cli": "^8.3.9",
-    "@wdio/config": "^8.3.2",
-    "@wdio/cucumber-framework": "^8.3.0",
-    "@wdio/globals": "^8.3.9",
-    "@wdio/local-runner": "^8.3.9",
-    "@wdio/selenium-standalone-service": "^8.3.2",
-    "@wdio/spec-reporter": "^8.3.0",
-    "@wdio/static-server-service": "^8.3.0",
-    "chromedriver": "^110.0.0",
+    "@wdio/cli": "^8.6.7",
+    "@wdio/config": "^8.6.6",
+    "@wdio/cucumber-framework": "^8.6.6",
+    "@wdio/globals": "^8.6.7",
+    "@wdio/local-runner": "^8.6.7",
+    "@wdio/selenium-standalone-service": "^8.6.6",
+    "@wdio/spec-reporter": "^8.6.6",
+    "@wdio/static-server-service": "^8.6.6",
+    "chromedriver": "^111.0.0",
     "eslint": "^8.34.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.27.5",
@@ -58,6 +58,6 @@
     "ts-node": "^10.9.1",
     "typescript": "^5.0.2",
     "wdio-chromedriver-service": "^8.1.1",
-    "webdriverio": "^8.3.9"
+    "webdriverio": "^8.6.7"
   }
 }
