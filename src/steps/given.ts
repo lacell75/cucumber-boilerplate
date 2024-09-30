@@ -20,11 +20,17 @@ import isEnabled from '../support/check/isEnabled.js';
 import isDisplayed from '../support/check/isDisplayed.js';
 import openWebsite from '../support/action/openWebsite.js';
 import setWindowSize from '../support/action/setWindowSize.js';
+import script from '../script.js';
 
 Given(
     /^I open the (url|site) "([^"]*)?"$/,
     openWebsite
 );
+
+Given('I test browser execute', async () => {
+    await browser.url('https://taskmob.demo.vaadin.com');
+    await browser.execute(script.start);
+});
 
 Given(
     /^the element "([^"]*)?" is( not)* displayed$/,
